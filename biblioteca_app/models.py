@@ -12,6 +12,7 @@ class Gender(models.Model):
 
 
 class Books(models.Model):
+    
     name = models.CharField(max_length=255)
     gender = models.ForeignKey(Gender, on_delete=models.CASCADE)
     qtd_pages = models.IntegerField()
